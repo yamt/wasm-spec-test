@@ -10,6 +10,8 @@ THIS_DIR=$(cd $(dirname $0) && pwd -P)
 WASM2JSON=~/git/wabt/b/wast2json
 
 # the spec interpreter from the exception-handling repo
+# a few tests are removed manually to allow multi-memory
+# https://github.com/yamt/exception-handling/tree/remove-no-multi-memory-assumptions
 SPECINTERP=~/git/wasm/exception-handling/interpreter/wasm
 
 # the spec tests from the exception-handling repo
