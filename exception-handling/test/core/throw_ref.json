@@ -1,0 +1,17 @@
+{"source_filename": "/var/folders/74/hw1sphgx0lv63q6pq_n5grw00000gn/T/tmp.EQVUGC13/throw_ref.wast",
+ "commands": [
+  {"type": "module", "line": 1, "filename": "throw_ref.0.wasm"}, 
+  {"type": "assert_exception", "line": 33, "action": {"type": "invoke", "field": "catch-throw_ref-0", "args": []}, "expected": []}, 
+  {"type": "assert_exception", "line": 34, "action": {"type": "invoke", "field": "catch-throw_ref-1", "args": [{"type": "i32", "value": "0"}]}, "expected": []}, 
+  {"type": "assert_return", "line": 35, "action": {"type": "invoke", "field": "catch-throw_ref-1", "args": [{"type": "i32", "value": "1"}]}, "expected": [{"type": "i32", "value": "23"}]}, 
+  {"type": "assert_exception", "line": 36, "action": {"type": "invoke", "field": "catchall-throw_ref-0", "args": []}, "expected": []}, 
+  {"type": "assert_exception", "line": 37, "action": {"type": "invoke", "field": "catchall-throw_ref-1", "args": [{"type": "i32", "value": "0"}]}, "expected": []}, 
+  {"type": "assert_return", "line": 38, "action": {"type": "invoke", "field": "catchall-throw_ref-1", "args": [{"type": "i32", "value": "1"}]}, "expected": [{"type": "i32", "value": "23"}]}, 
+  {"type": "assert_exception", "line": 39, "action": {"type": "invoke", "field": "throw_ref-nested", "args": [{"type": "i32", "value": "0"}]}, "expected": []}, 
+  {"type": "assert_exception", "line": 40, "action": {"type": "invoke", "field": "throw_ref-nested", "args": [{"type": "i32", "value": "1"}]}, "expected": []}, 
+  {"type": "assert_return", "line": 41, "action": {"type": "invoke", "field": "throw_ref-nested", "args": [{"type": "i32", "value": "2"}]}, "expected": [{"type": "i32", "value": "23"}]}, 
+  {"type": "assert_return", "line": 42, "action": {"type": "invoke", "field": "throw_ref-recatch", "args": [{"type": "i32", "value": "0"}]}, "expected": [{"type": "i32", "value": "23"}]}, 
+  {"type": "assert_return", "line": 43, "action": {"type": "invoke", "field": "throw_ref-recatch", "args": [{"type": "i32", "value": "1"}]}, "expected": [{"type": "i32", "value": "42"}]}, 
+  {"type": "assert_exception", "line": 44, "action": {"type": "invoke", "field": "throw_ref-stack-polymorphism", "args": []}, "expected": []}, 
+  {"type": "assert_invalid", "line": 46, "filename": "throw_ref.1.wasm", "text": "type mismatch", "module_type": "binary"}, 
+  {"type": "assert_invalid", "line": 55, "filename": "throw_ref.2.wasm", "text": "type mismatch", "module_type": "binary"}]}

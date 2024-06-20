@@ -1,0 +1,6 @@
+{"source_filename": "/var/folders/74/hw1sphgx0lv63q6pq_n5grw00000gn/T/tmp.EQVUGC13/ref_null.wast",
+ "commands": [
+  {"type": "module", "line": 1, "filename": "ref_null.0.wasm"}, 
+  {"type": "assert_return", "line": 13, "action": {"type": "invoke", "field": "externref", "args": []}, "expected": [{"type": "externref", "value": "null"}]}, 
+  {"type": "assert_return", "line": 14, "action": {"type": "invoke", "field": "exnref", "args": []}, "expected": [{"type": "exnref", "value": "null"}]}, 
+  {"type": "assert_return", "line": 15, "action": {"type": "invoke", "field": "funcref", "args": []}, "expected": [{"type": "funcref", "value": "null"}]}]}

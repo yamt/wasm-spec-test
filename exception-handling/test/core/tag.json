@@ -1,0 +1,6 @@
+{"source_filename": "/var/folders/74/hw1sphgx0lv63q6pq_n5grw00000gn/T/tmp.EQVUGC13/tag.wast",
+ "commands": [
+  {"type": "module", "line": 1, "filename": "tag.0.wasm"}, 
+  {"type": "register", "line": 8, "as": "test"}, 
+  {"type": "module", "line": 9, "filename": "tag.1.wasm"}, 
+  {"type": "assert_invalid", "line": 17, "filename": "tag.2.wasm", "text": "non-empty tag result type", "module_type": "binary"}]}
