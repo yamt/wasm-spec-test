@@ -5,10 +5,17 @@ set -e
 set -x
 
 THIS_DIR=$(cd $(dirname $0) && pwd -P)
+
+# wast2json with a hack https://github.com/yamt/wabt/tree/eh
 WASM2JSON=~/git/wabt/b/wast2json
+
+# the spec interpreter from the exception-handling repo
 SPECINTERP=~/git/wasm/exception-handling/interpreter/wasm
+
+# the spec tests from the exception-handling repo
 SRCDIR=~/git/wasm/exception-handling/test/core
-DSTDIR=${THIS_DIR}/tmp
+
+DSTDIR=${THIS_DIR}/exception-handling/test/core
 TMP=$(mktemp -d)
 
 conv()
